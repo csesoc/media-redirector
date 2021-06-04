@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  server:
+    container_name: media-redirector
+    image: media-redirector
+    restart: always
+    build: .
+    ports:
+      - "8080:8080"
+
