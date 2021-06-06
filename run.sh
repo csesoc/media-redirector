@@ -1,3 +1,4 @@
+#!/bin/sh
 cd /data
 npm install static-html-server
 cd /data/node_modules/static-html-server/
