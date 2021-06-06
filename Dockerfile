@@ -1,6 +1,6 @@
 FROM node:latest
 WORKDIR /data
-RUN npm install static-html-server
+COPY run.sh .
 COPY content/ content/
 EXPOSE 8080
-CMD ["node", "/data/node_modules/static-html-server/static-html-server.js", "-p", "8080", "-r", "content/", "-f", "index.html"]
+CMD ["/data/run.sh"]
